@@ -1,0 +1,89 @@
+1. Write a program to create a immutable object.
+EMployee 
+id, name, salary
+
+Array Program 
+int arr[] = {1,2,3,4,5,6,7,8,9};
+
+
+import java.util.*;
+
+class Solution {
+    
+
+
+    public String solution(String s) {
+        // write the solution here..
+        char[] c=s.toCharArray();
+        boolean matchFound=false;
+        StringBuilder st=new StringBuilder();
+        for(int i=0;i<s.length();i++){
+            for(int j=i+1;j<s.length();j++){
+                if(c[i]==c[j] && !matchFound){
+                    st.append(c[i]);
+                    matchFound=true;
+                }
+               
+            }
+            matchFound=false;
+        }
+
+        return st.toString();
+    }
+}
+
+class Main {
+
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);
+        String line = myObj.nextLine();
+        
+        
+        String ans = new Solution().solution(line);
+        System.out.print(ans);
+    }
+}
+
+
+%%%%%%%%%%%%%%%%%%
+import java.util.*;
+
+class Solution {
+    
+
+
+    public String solution(String s) {
+        // write the solution here..
+        char[] c=s.toCharArray();
+        boolean matchFound=false;
+        StringBuilder st=new StringBuilder();
+        for(int i=0;i<s.length();i++){
+            for(int j=i+1;j<s.length();j++){
+                if(c[i]==c[j] && !matchFound){
+                    st.append(c[i]);
+                    matchFound=true;
+                }
+               
+            }
+            matchFound=false;
+        }
+
+        return st.toString();
+    }
+}
+
+class Main {
+
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);
+        String line = myObj.nextLine();
+        
+        
+        String ans = new Solution().solution(line);
+        System.out.print(ans);
+    }
+}
+
+
+##############
+https://interview.codejudge.io/auth/login
