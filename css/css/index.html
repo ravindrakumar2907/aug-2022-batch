@@ -3,7 +3,7 @@ HTML- Structure createtion
 CSS - Cascading Style Sheet
 JavaScript- Dynamic nature 
 
-tags- body, a, img, ul, li, head, table, tr, td, input, button, br, p,span, iframe
+tags- body, a, img, ul, li, head, table, tr, td, input, button, br, p,span, ifame
 Any html component
 
 id: Id is nothing but a unique name to html tags. Its attribute of html tag.
@@ -12,18 +12,26 @@ class: Class is nothing but a name to html tags. Its attribute of html tag.
 
 <input type="text" id="username" class="inputBox" name="" ></input>
 <input type="text" id="email" class="inputBox" name="" ></input>
-// /* */
-<!-- -->
+
 CSS:
-External CSS
-Internal CSS
-Inline CSS
+1. inline - highest 
+2. external - second level
+3. in a file - third level
 -->
 <html>
     <head>
         <title>This is css basic demo</title>
-        <link rel="stylesheet" href="css/style.css"></link>
         <style>
+            body{
+                background-color: antiquewhite;
+            }
+            #username{
+                margin-top: 30px;
+            }
+            .inputBox{
+                margin-top: 10px;
+                width: 200px;
+            }
         </style>
     </head>
     <body>

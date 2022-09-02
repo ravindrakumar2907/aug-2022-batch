@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is login demo page</title>
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+           h2{
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 5%;
+           }
+           input[type="submit"]{
+            padding: 10px 25px 10px 25px;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: teal;
+            color: aliceblue;
+            border-radius: 10px;
+            margin-top: 2%;
+           }
+           .inputBox{
+                padding: 10px;
+                max-width: 40%;
+                font-size: 20px;
+                font-family: 'Courier New', Courier, monospace;
+                margin: 5px 0px 5px 5px;
+                border-radius: 10px;
+           }
+           #fomrContainer{
+            text-align: center;
+            border: 1px solid gray;
+            margin: 10% 25% 10% 25%;
+            padding: 4%;
+            border-radius: 10px;
+           }
+        </style>
+    </head>
+    <body>
+        <div id="fomrContainer">
+            <h2>Login</h2>
+            <input type="text" id="username" class="inputBox" name="username" 
+            placeholder="Enter the username" > </input><br/>
+            <input type="password" id="password" class="inputBox" 
+            name="password"  placeholder="Enter the Password" > </input><br/>
+            <input type="submit" value="Login" ></input>
+        </div>
+    </body>
+</html>
