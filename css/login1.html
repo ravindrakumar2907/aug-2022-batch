@@ -16,10 +16,15 @@
             padding: 10px 25px 10px 25px;
             font-size: 20px;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            background-color: teal;
+            background-color: #1a9cdf;
             color: aliceblue;
-            border-radius: 10px;
+            border-radius: 5px;
+            border: 0px solid white;
             margin-top: 2%;
+            opacity: 0.5;
+           }
+           input[type="submit"]:hover{
+            opacity: 1;
            }
            .inputBox{
                 padding: 10px;
@@ -32,13 +37,34 @@
            #fomrContainer{
             text-align: center;
             border: 1px solid gray;
-            margin: 10% 25% 10% 25%;
+            margin: 5% 25% 5% 25%;
             padding: 4%;
             border-radius: 10px;
+           }
+           #heading{
+                background-color: black;
+                color: white;
+                padding: 2%;
+           }
+           #menu{
+                background-color:  #1a9cdf;
+                color: white;
+                padding: 1%;
+           }
+           #footer{
+            background-color: black;
+            color: white;
+            padding: 0.5%;
            }
         </style>
     </head>
     <body>
+        <div id="heading">
+            Heading
+        </div>
+        <div id="menu">
+            Menu
+        </div>
         <div id="fomrContainer">
             <h2>Login</h2>
             <input type="text" id="username" class="inputBox" name="username" 
@@ -46,6 +72,9 @@
             <input type="password" id="password" class="inputBox" 
             name="password"  placeholder="Enter the Password" > </input><br/>
             <input type="submit" value="Login" ></input>
+        </div>
+        <div id="footer">
+            Footer
         </div>
     </body>
 </html>
